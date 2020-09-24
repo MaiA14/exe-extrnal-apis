@@ -1,0 +1,16 @@
+<div class="main-container">
+<h1>Users</h1>
+<table class="users-table">
+  <tbody>
+    <th>username</th>
+    <th>email</th>
+    <th>city</th>
+    <th>zipcode</th>
+     <tr *ngFor='let user of users$'>
+       <td>{{ user.username}}</td>
+       <td>{{ user.email}}</td>
+       <td>{{user.address.city}}</td>
+       <td>{{user.address.zipcode}}</td>
+  </tbody>
+</table>
+<div>
